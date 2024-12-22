@@ -1,0 +1,18 @@
+Метод POST
+https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+{"status":"OK","place_id":"f3c1b9547391598e62163ab2179c8e2c","scope":"APP","reference":"11b0848a4ddae4ff2a5147d92736552411b0848a4ddae4ff2a5147d927365524","id":"11b0848a4ddae4ff2a5147d927365524"}
+Успешно! Статус код =200
+Все поля присутствуют
+status - верно!!!
+Метод PUT
+https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+{"msg":"Address successfully updated"}
+Успешно! Статус код =200
+Все поля присутствуют
+msg - верно!!!
+Метод GET PUT
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=f3c1b9547391598e62163ab2179c8e2c
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"100 Lenina street, RU","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Успешно! Статус код =200
+Все поля присутствуют
+address - верно!!!

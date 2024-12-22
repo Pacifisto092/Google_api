@@ -1,0 +1,18 @@
+Метод POST
+https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+{"status":"OK","place_id":"1c45b04cd91697d0e758abc5e2b40226","scope":"APP","reference":"ee6fe43dc1fb38ba470442419349f993ee6fe43dc1fb38ba470442419349f993","id":"ee6fe43dc1fb38ba470442419349f993"}
+Успешно! Статус код =200
+Все поля присутствуют
+status - верно!!!
+Метод DELETE
+https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+{"status":"OK"}
+Успешно! Статус код =200
+Все поля присутствуют
+status - верно!!!
+Метод PUT
+https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+{"msg":"Update address operation failed, looks like the data doesn't exists"}
+Успешно! Статус код =404
+Все поля присутствуют
+msg - верно!!!
