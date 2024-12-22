@@ -1,0 +1,6 @@
+Метод DELETE
+https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+{"msg":"Delete operation failed, looks like the data doesn't exists"}
+Успешно! Статус код =404
+Все поля присутствуют
+msg - верно!!!

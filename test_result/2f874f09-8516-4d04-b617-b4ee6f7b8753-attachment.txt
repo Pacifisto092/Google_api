@@ -1,0 +1,12 @@
+Метод POST
+https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+{"status":"OK","place_id":"9f37b4d0998bc3f23d03219eee2f1816","scope":"APP","reference":"ac333d5db413130b94fcc849ba031427ac333d5db413130b94fcc849ba031427","id":"ac333d5db413130b94fcc849ba031427"}
+Успешно! Статус код =200
+Все поля присутствуют
+status - верно!!!
+Метод GET POST
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=9f37b4d0998bc3f23d03219eee2f1816
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"29, side layout, cohen 09","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Успешно! Статус код =200
+Все поля присутствуют
+address - верно!!!

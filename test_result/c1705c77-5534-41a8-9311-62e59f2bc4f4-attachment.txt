@@ -1,0 +1,6 @@
+Метод PUT
+https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+{"msg":"Update address operation failed, looks like the data doesn't exists"}
+Успешно! Статус код =404
+Все поля присутствуют
+msg - верно!!!
