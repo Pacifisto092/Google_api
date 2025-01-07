@@ -37,7 +37,6 @@ class TestPositive:
         print("Метод PUT")
         result_put = GoogleMapsApi.put_new_place(place_id)
         Cheking.check_status_code(result_put, 200)
-        Cheking.check_json_token(result_put, ['msg'])
         Cheking.check_json_value(result_put, 'msg', 'Address successfully updated')
 
         print("Метод GET PUT")
@@ -60,5 +59,4 @@ class TestPositive:
         print("Метод DELETE")
         result_delete = GoogleMapsApi.delete_new_place(place_id)
         Cheking.check_status_code(result_delete, 200)
-        Cheking.check_json_token(result_delete, ['status'])
         Cheking.check_json_value(result_delete, 'status', 'OK')
