@@ -7,15 +7,10 @@ class TestNegative:
     """"Негативные тесты"""
 
     @allure.description("Изменение удаленной локации")
-    def test_changing_a_removed_place(self):
-        print("Метод POST")
-        result_post = GoogleMapsApi.create_new_place()
-        place_id = result_post.json()['place_id']
-        Cheking.check_status_code(result_post, 200)
-        Cheking.check_json_token(result_post, ['status', 'place_id', 'scope', 'reference', 'id'])
-        Cheking.check_json_value(result_post, 'status', 'OK')
+    def test_changing_a_removed_place(self, fixt):
 
         print("Метод DELETE")
+        place_id = fixt
         result_delete = GoogleMapsApi.delete_new_place(place_id)
         Cheking.check_status_code(result_delete, 200)
         Cheking.check_json_value(result_delete, 'status', 'OK')
@@ -35,15 +30,10 @@ class TestNegative:
                                                     " looks like the data doesn't exists")
 
     @allure.description("Получение удаленной локации")
-    def test_get_a_removed_place(self):
-        print("Метод POST")
-        result_post = GoogleMapsApi.create_new_place()
-        place_id = result_post.json()['place_id']
-        Cheking.check_status_code(result_post, 200)
-        Cheking.check_json_token(result_post, ['status', 'place_id', 'scope', 'reference', 'id'])
-        Cheking.check_json_value(result_post, 'status', 'OK')
+    def test_get_a_removed_place(self, fixt):
 
         print("Метод DELETE")
+        place_id = fixt
         result_delete = GoogleMapsApi.delete_new_place(place_id)
         Cheking.check_status_code(result_delete, 200)
         Cheking.check_json_value(result_delete, 'status', 'OK')
